@@ -1,0 +1,21 @@
+{
+    "name": "digitalscout/api-client",
+    "description": "A partner API client for Digital Scout",
+    "require": {
+        "guzzlehttp/guzzle": "~5.0",
+        "monolog/monolog": "~1.13"
+    },
+    "autoload": {
+        "psr-4": {"DigitalScout\\": "src/"}
+    },
+    "authors": [
+        {
+            "name": "Luke Hertert",
+            "email": "luke.hertert@digitalscout.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+}
