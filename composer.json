@@ -2,6 +2,7 @@
     "name": "digitalscout/api-client",
     "description": "A partner API client for Digital Scout",
     "require": {
+        "php": ">=5.4.0",
         "guzzlehttp/guzzle": "~5.0",
         "monolog/monolog": "~1.13"
     },
@@ -14,8 +15,5 @@
             "email": "luke.hertert@digitalscout.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.4.0"
-    }
+    "minimum-stability": "dev"
 }
