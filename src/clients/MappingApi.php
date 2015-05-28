@@ -25,6 +25,22 @@ class MappingApi {
       return array_map($initializeMapping, $mappings);
   }
   
+    /**
+   * createPartnerMap
+   *
+   * Creates a partner map
+   *
+   * @param string $externalIdKey The partner type key (provided by Digital Scout) (required)
+   * @param string $partnerId The partner ID (required)
+   * @param string $digitalScoutId The Digital Scout resource ID (required)
+   */
+   public function createPartnerMap($externalIdKey, $partnerId, $digitalScoutId) {
+      $this->apiClient->post("/map/{externalIdKey}", [ 
+          "externalIdKey" => $externalIdKey ,
+          "internalId" => $digitalScoutId,
+          "externalId" => $partnerId
+        ]);
+  }
 
   /**
    * getDigitalScoutId
